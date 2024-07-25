@@ -1,0 +1,94 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.search-bar input,
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.note-form textarea {
+  height: 100px;
+}
+
+.note-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.note-list {
+  margin-top: 20px;
+}
+
+.note-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.note-item h3 {
+  margin-top: 0;
+}
+
+.note-item .timestamp {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.note-item button {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin-right: 5px;
+}
+
+.pagination button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination li.active button {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+
+  .note-form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
